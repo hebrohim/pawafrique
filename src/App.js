@@ -5,9 +5,11 @@ import OurServices from "./component/OurServices";
 
 function App() {
 return(
-<div className="px-5 font-inter md:px-16">
+<div className=" font-inter">
+  <div className="backg">
 <Nav/>
 <HeroSection/>
+</div>
 <OurServices/>
 
   </div>

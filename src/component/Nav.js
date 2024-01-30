@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className=" my-5 h-[10vh] flex items-center justify-between">
+    <nav className="px-5 md:px-16 py-5 h-[10vh] flex items-center justify-between">
       <div className="hidden lg:flex w-1/3 justify-between">
         <a href="">Home</a>
         <a href="">About us</a>

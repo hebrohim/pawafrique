@@ -11,7 +11,7 @@ const OurServices = () => {
     const electricalSolutions =  "/images/electricalSolutions.svg"
     
   return (
-    <div>OurServices
+    <div className=' px-5 md:px-16'>OurServices
     {/* <img  src={process.env.PUBLIC_URL + "/images/energyManagement.svg"}/> */}
         
         <Service image ={solarSolutions}  title = "Solar Solutions" content = "Our services include installation, maintenance, and off-grid solutions, harnessing the power of the sun for a greener tomorrow."/>

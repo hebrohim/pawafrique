@@ -2,9 +2,9 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row">
-      <section className="my-auto">
-        <h2 className="font-semibold text-3xl lg:text-5xl">
+    <div className="px-5 md:px-16 hero flex flex-col md:flex-row ">
+      <section className="my-auto pt-5">
+        <h2 className="font-semibold text-3xl lg:text-5xl ">
           <span className="text-[#FF0000] inline-block md:block">Pawafrique</span>
           <span className="font-normal text-[#101828] inline-block">
             Empowering Through
