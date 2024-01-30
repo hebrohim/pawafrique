@@ -5,7 +5,7 @@ const Service = (props) => {
     
   return (
     <div>
-        <img src={process.env.PUBLIC_URL + image}/>
+        <img alt='our work pictures' src={process.env.PUBLIC_URL + image}/>
         <h4>{title}</h4>
         <p>{content}</p> 
     </div>
