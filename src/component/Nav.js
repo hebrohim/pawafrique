@@ -10,10 +10,10 @@ const Nav = () => {
         <button>Portfolio</button>
       </div>
       <div className="w-1/3">
-        <img
+        {/* <img
           alt="man working on solar panel"
           src={process.env.PUBLIC_URL + "/images/logo.svg"}
-        />
+        /> */}
       </div>
       <span className="text-[2rem] font-thin text-[#101828] lg:hidden">
         &#9776;

@@ -1,4 +1,5 @@
 
+import AboutPawafrique from "./component/AboutPawafrique";
 import ContactUs from "./component/ContactUs";
 import Footer from "./component/Footer";
 import HeroSection from "./component/HeroSection";
@@ -12,6 +13,7 @@ return(
   <div className="backg">
 <Nav/>
 <HeroSection/>
+<AboutPawafrique/>
 </div>
 <OurServices/>
 <OurPortfolio/>

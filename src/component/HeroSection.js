@@ -23,12 +23,12 @@ const HeroSection = () => {
       </section>
 
       <section className="my-10">
-        <img
+        {/* <img
           src={process.env.PUBLIC_URL + "/images/manHeader.svg"}
           alt="Illustration of a man"
           className="mx-auto"
           style={{ maxWidth: "100%", height: "auto" }}
-        />
+        /> */}
       </section>
     </div>
   );

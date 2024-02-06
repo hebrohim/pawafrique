@@ -19,7 +19,7 @@ const ContactUs = () => {
 
         <label>Message</label>
         <textarea className="border p-2" placeholder="Leave us a mesage...  "/>
-        <div className="flex justify-between mt-5 mb-8">
+        <div className="flex flex-wrap justify-between mt-5 mb-8">
    <input type="checkbox"/>
    <span className="text-[#475467]">You agree to our friendly privacy policy.</span>
    </div>
