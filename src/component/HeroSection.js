@@ -22,7 +22,7 @@ const HeroSection = () => {
         </button>
       </section>
 
-      <section className="mt-10">
+      <section className="my-10">
         <img
           src={process.env.PUBLIC_URL + "/images/manHeader.svg"}
           alt="Illustration of a man"

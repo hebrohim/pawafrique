@@ -9,9 +9,18 @@ const Nav = () => {
         <button>Services</button>
         <button>Portfolio</button>
       </div>
-      <div className="w-1/3"><img alt="man working on solar panel" src={process.env.PUBLIC_URL + "/images/logo.svg"} /></div>
-      <span className="text-[2rem] font-thin text-[#101828] lg:hidden">&#9776;</span>
-      <button className="hidden border-2 px-4 py-2 border-[#FF0000] lg:flex">Contact Us</button>
+      <div className="w-1/3">
+        <img
+          alt="man working on solar panel"
+          src={process.env.PUBLIC_URL + "/images/logo.svg"}
+        />
+      </div>
+      <span className="text-[2rem] font-thin text-[#101828] lg:hidden">
+        &#9776;
+      </span>
+      <button className="hidden border-2 px-4 py-2 border-[#FF0000] lg:flex">
+        Contact Us
+      </button>
     </nav>
   );
 };

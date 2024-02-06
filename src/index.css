@@ -13,9 +13,9 @@ body,*{
 
 
 .backg{
+/* background-color: rgba(167, 1, 1, 0.74); */
+  background: url("../src/background.png"),center/cover no-repeat, #e6e6e694;
 
-  background: url("../src/background.png")
-  /* background: red */
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 

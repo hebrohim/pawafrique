@@ -1,6 +1,9 @@
 
+import ContactUs from "./component/ContactUs";
+import Footer from "./component/Footer";
 import HeroSection from "./component/HeroSection";
 import Nav from "./component/Nav";
+import OurPortfolio from "./component/OurPortfolio";
 import OurServices from "./component/OurServices";
 
 function App() {
@@ -11,7 +14,9 @@ return(
 <HeroSection/>
 </div>
 <OurServices/>
-
+<OurPortfolio/>
+<ContactUs/>
+<Footer/>
   </div>
   
   )
