@@ -1,13 +1,16 @@
 import React from 'react'
 import Service from './Service'
 import Portfolio from './Portfolio'
-
+import solarInstallation from "./images/solarInstallation.svg"
+import smartHome from "./images/smartHome.svg"
+import securitySytem from "./images/securitySystem.svg"
+import energyEfficient from "./images/energyEfficient.svg"
 const OurPortfolio = () => {
     
-    const solarInstallation = "/images/solarInstallation.svg"
-    const smartHome =  "/images/smartHome.svg"
-    const securitySytem =  "/images/securitySystem.svg"
-    const energyEfficient =  "/images/energyEfficient.svg"
+    // const solarInstallation = "/images/solarInstallation.svg"
+    // const smartHome =  "/images/smartHome.svg"
+    // const securitySytem =  "/images/securitySystem.svg"
+    // const energyEfficient =  "/images/energyEfficient.svg"
     
   return (
     <div className=' px-5 md:px-16 '>

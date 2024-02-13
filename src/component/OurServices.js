@@ -1,14 +1,19 @@
 import React from 'react'
 import Service from './Service'
-
+import solarSolutions from "./images/solarSolution.svg"
+import energyManagement from"./images/energyManagement.svg"
+import powerGeneration from"./images/powerGeneration.svg"
+import automationDoor from"./images/automationDoor.svg"
+import securitySolutions from"./images/securitySolutions.svg"
+import electricalSolutions from "./images/electricalSolutions.svg"
 const OurServices = () => {
     
-    const energyManagement = "/images/energyManagement.svg"
-    const solarSolutions =  "/images/solarSolution.svg"
-    const powerGeneration =  "/images/powerGeneration.svg"
-    const automationDoor =  "/images/automationDoor.svg"
-    const securitySolutions =  "/images/securitySolutions.svg"
-    const electricalSolutions =  "/images/electricalSolutions.svg"
+    // const energyManagement = "/images/energyManagement.svg"
+    // const solarSolutions =  "/images/solarSolution.svg"
+    // const powerGeneration =  "/images/powerGeneration.svg"
+    // const automationDoor =  "/images/automationDoor.svg"
+    // const securitySolutions =  "/images/securitySolutions.svg"
+    // const electricalSolutions =  "/images/electricalSolutions.svg"
     
   return (
     <div className=' px-5 md:px-16 '>

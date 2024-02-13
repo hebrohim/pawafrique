@@ -1,5 +1,5 @@
 import React from "react";
-
+import headerImage from "./images/manHeader.svg"
 const HeroSection = () => {
   return (
     <div className="px-5 md:px-16 hero flex flex-col md:flex-row ">
@@ -23,12 +23,12 @@ const HeroSection = () => {
       </section>
 
       <section className="my-10">
-        {/* <img
-          src={process.env.PUBLIC_URL + "/images/manHeader.svg"}
+        <img
+          src={headerImage}
           alt="Illustration of a man"
           className="mx-auto"
           style={{ maxWidth: "100%", height: "auto" }}
-        /> */}
+        />
       </section>
     </div>
   );

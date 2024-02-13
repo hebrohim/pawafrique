@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "./images/logo.svg"
 const Nav = () => {
   return (
     <nav className="px-5 md:px-16 py-5 h-[10vh] flex items-center justify-between">
@@ -10,10 +10,10 @@ const Nav = () => {
         <button>Portfolio</button>
       </div>
       <div className="w-1/3">
-        {/* <img
+        <img
           alt="man working on solar panel"
-          src={process.env.PUBLIC_URL + "/images/logo.svg"}
-        /> */}
+          src={logo}
+        />
       </div>
       <span className="text-[2rem] font-thin text-[#101828] lg:hidden">
         &#9776;
