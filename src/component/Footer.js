@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "./images/logo.svg"
 
 const Footer = () => {
   return (
@@ -10,6 +11,7 @@ const Footer = () => {
       /> */}
 
       </div>
+      <div><img src={logo}/></div>
       <section className="flex flex-wrap justify-between">
         <button>About us</button>
         <button>Privacy and Policy</button>

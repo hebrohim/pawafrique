@@ -14,15 +14,15 @@ const OurPortfolio = () => {
     
   return (
     <div className=' px-5 md:px-16 '>
-        <h4 className='text-[#FF0000] mt-10 font-medium'>Our Portfolio</h4>
-        <h1 className='text-[#101828] text-2xl font-semibold mb-10'>Featured Projects</h1>
+        <h4 className='text-[#FF0000] mt-10 font-medium text-center'>Our Portfolio</h4>
+        <h1 className='text-[#101828] text-2xl font-semibold mb-10 text-center'>Featured Projects</h1>
     {/* <img  src={process.env.PUBLIC_URL + "/images/energyManagement.svg"}/> */}
-        
+        <section className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 '>
         <Portfolio image ={solarInstallation}  title = "Solar Installation at client Residence" content = "Our services include installation, maintenance, and off-grid solutions, harnessing the power of the sun for a greener tomorrow."/>
         <Portfolio image = {smartHome} title = "Smart Home Integration for Smith Family" content = "Implemented a comprehensive smart home system for the Smith Family, including automated lighting, climate control, and security integration. Enhanced convenience and security while reducing energy consumption."/>
         <Portfolio image = {securitySytem} title = "Security System Upgrade for AU Corporation" content = "Revamped the security infrastructure at ABC Corporation, integrating advanced CCTV, access control, and fire alarm systems. Enhanced surveillance capabilities and ensured round-the-clock protection."/>
         <Portfolio image = {energyEfficient} title = "Energy-Efficient Lighting Implementation at Commercial Complex" content = "Executed an energy-efficient lighting upgrade at a large commercial complex, introducing LED fixtures and smart lighting controls. Resulted in a 40% reduction in energy consumption and significantly lowered maintenance costs."/>
-    
+        </section>
     </div>
   )
 }

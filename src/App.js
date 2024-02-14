@@ -13,8 +13,8 @@ return(
   <div className="backg">
 <Nav/>
 <HeroSection/>
-<AboutPawafrique/>
 </div>
+<AboutPawafrique/>
 <OurServices/>
 <OurPortfolio/>
 <ContactUs/>

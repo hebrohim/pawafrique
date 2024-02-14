@@ -4,9 +4,9 @@ const Portfolio = (props) => {
   const { image, title, content } = props;
 
   return (
-    <div className="mb-10">
+    <div>
       <img className = "w-full" alt="our Portfolio pictures" src={image} />
-      <div className="shadow-xl p-5 rounded-b-3xl ">
+      <div className="mb-10 shadow-xl p-5 rounded-b-3xl lg:mb-0">
         <h4 className="my-2 text-[#101828] font-semibold text-xl ">{title}</h4>
         <p className="text-[#475467] text-sm text-justify">{content}</p>
       </div>

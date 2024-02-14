@@ -1,8 +1,9 @@
 import React from "react";
 import headerImage from "./images/manHeader.svg"
+import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
-    <div className="px-5 md:px-16 hero flex flex-col md:flex-row ">
+    <motion.div  className="px-5 md:px-16 hero flex flex-col md:flex-row ">
       <section className="my-auto pt-5">
         <h2 className="font-semibold text-3xl lg:text-5xl ">
           <span className="text-[#FF0000] inline-block md:block">Pawafrique</span>
@@ -26,11 +27,11 @@ const HeroSection = () => {
         <img
           src={headerImage}
           alt="Illustration of a man"
-          className="mx-auto"
+          className="mx-auto opacity-[0.7]"
           style={{ maxWidth: "100%", height: "auto" }}
         />
       </section>
-    </div>
+    </motion.div>
   );
 };
 
