@@ -22,3 +22,19 @@ export const fadeIn = (direction, delay, scale) => {
     },
   };
 };
+
+export const stagger = (Id,x,y) => {
+  return {
+    initial: {
+      opacity: 0,
+      translateX: x,
+      translateY:y
+    },
+      visible: {
+         opacity: 1,
+          translateX: 0,
+         translateY:0,   
+      transition: { duration: 1, delay: Id * 0.2 ,type:"spring",stiffness:1000},
+    },
+  }
+}
