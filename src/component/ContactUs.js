@@ -1,14 +1,35 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "./Variants";
 const ContactUs = () => {
   return (
     <div className="my-10 px-5 md:px-16">
       
-      <h2 className="text-[#101828] font-semibold text-2xl">Contact us</h2>
-      <p className="text-[#475467] text-sm text-justify">
+      <motion.h2
+        variants={fadeIn("right", 0.9, 1)}
+        initial="hidden"
+        // animate="show"
+        whileInView={"show"}
+         viewport={{once:true}}
+
+      className="text-[#101828] font-semibold text-2xl">Contact us</motion.h2>
+      <motion.p
+      variants={fadeIn("right", 1.2, 1)}
+      initial="hidden"
+      // animate="show"
+      whileInView={"show"}
+      viewport={{once:true}}
+
+      className="text-[#475467] text-sm text-justify">
         Our team is here to assist you!
-      </p>
-      <form className="flex flex-col mt-10 ">
+      </motion.p>
+      <motion.form
+        variants={fadeIn("right", 1.5, 1)}
+        initial="hidden"
+        // animate="show"
+        whileInView={"show"}
+        viewport={{once:true}}
+      className="flex flex-col mt-10 ">
         <label>Full name</label>
         <input placeholder="enter full name" className="mb-2 border p-2 rounded-md"/>
 
@@ -25,7 +46,7 @@ const ContactUs = () => {
    <span className="text-[#475467]">You agree to our friendly privacy policy.</span>
    </div>
      <button className="bg-[#FF0000] text-white rounded-md py-4"> send message</button>
-      </form>
+      </motion.form>
     </div>
   );
 };

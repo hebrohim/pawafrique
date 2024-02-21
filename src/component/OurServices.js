@@ -6,7 +6,7 @@ import powerGeneration from "./images/powerGeneration.svg";
 import automationDoor from "./images/automationDoor.svg";
 import securitySolutions from "./images/securitySolutions.svg";
 import electricalSolutions from "./images/electricalSolutions.svg";
-import { animate, motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { stagger } from "./Variants";
 const OurServices = () => {
   // const energyManagement = "/images/energyManagement.svg"
@@ -43,20 +43,18 @@ const OurServices = () => {
   //   },
   // };
   return (
-    <motion.div variants={stagger} className=" px-5 md:px-16 ">
+    <motion.div className=" px-5 md:px-16 ">
       <motion.h4
-       variants={stagger(0.3,-50,0)}
-       initial = "initial"
-       whileInView={"visible"}
-       viewport={{
-         once:true
-       }}
+              initial={{ scale:0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 , transition:{type:"spring",delay:1,stiffness:1000}}}
+              viewport={{
+                once:true
+              }}
       className="text-[#FF0000] mt-10 font-medium">Our services</motion.h4>
       <motion.h1
-        variants={stagger(0.4,-50,0)}
-        initial = "initial"
-        whileInView={"visible"}
-        viewport={{
+         initial={{ scale:0, opacity: 0 }}
+         whileInView={{ scale: 1, opacity: 1 , transition:{type:"spring",delay:1.5,stiffness:1000}}}
+         viewport={{
           once:true
         }}
       className="text-[#101828] text-2xl font-semibold mb-10">
@@ -65,44 +63,50 @@ const OurServices = () => {
       {/* <img  src={process.env.PUBLIC_URL + "/images/energyManagement.svg"}/> */}
       <section className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         <Service
+        id = "1"
           image={solarSolutions}
           title="Solar Solutions"
           content="Our services include installation, maintenance, and off-grid solutions, harnessing the power of the sun for a greener tomorrow."
-          id = "1"
+          
           
         />
         <Service
+         id = "2"
           image={energyManagement}
           title="Energy Management"
           content="Take charge of energy efficiency. Our expertise in metering, monitoring, and audits helps conserve resources and cut costs."
-          id = "2"
+         
         />
         <Service
+        id = "3"
           image={powerGeneration}
           title="Power Generation"
           content="Reliable power solutions: generator installation, maintenance, and HV & LV infrastructure management for uninterrupted supply."
-          id = "3"
+          
 
         />
         <Service
+         id = "4"
           image={automationDoor}
           title="Automatic Door Opening"
           content="Enhance accessibility and security with our automated door systems - sliding, swinging, and revolving options for safety and convenience."
-          id = "4"
+         
 
         />
         <Service
+         id = "5"
           image={securitySolutions}
           title="security Solutions"
           content="We provide a comprehensive security package, including CCTV, intercoms, fire alarms, access control, and smart home integration for safety."
-          id = "5"
+         
 
         />
         <Service
+        id = "6"
           image={electricalSolutions}
           title="Electrical Solutions"
           content="Our expertise lies in efficient electrical systems, covering installation, maintenance, and innovative lighting solutions for empowered spaces."
-          id = "6"
+          
 
         />
       </section>

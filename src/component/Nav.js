@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./images/logo.svg";
 import { animate, motion } from "framer-motion";
 import { fadeIn } from "./Variants";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 const Nav = () => {
   //ANIMATION STARTS HERE
   // const navBarAnimation = {
@@ -39,7 +40,17 @@ const Nav = () => {
         className="hidden lg:flex w-1/3 justify-between"
       >
         <button>Home</button>
-        <button>About us</button>
+        <button>
+        <Link
+        to="AboutPawafrique"
+        spy={true}
+        smooth={true}
+        hashSpy={true}
+        offset={50}
+        duration={500}
+        
+        >About us</Link>
+        </button>
         <button>Services</button>
         <button>Portfolio</button>
       </motion.div>
