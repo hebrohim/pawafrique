@@ -43,7 +43,7 @@ const OurServices = () => {
   //   },
   // };
   return (
-    <motion.div className=" px-5 md:px-16 ">
+    <motion.div id="Service" className=" px-5 md:px-16 ">
       <motion.h4
               initial={{ scale:0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 , transition:{type:"spring",delay:1,stiffness:1000}}}

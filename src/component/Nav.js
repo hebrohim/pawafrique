@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./images/logo.svg";
 import { animate, motion } from "framer-motion";
 import { fadeIn } from "./Variants";
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 const Nav = () => {
   //ANIMATION STARTS HERE
   // const navBarAnimation = {
@@ -39,20 +39,38 @@ const Nav = () => {
         
         className="hidden lg:flex w-1/3 justify-between"
       >
-        <button>Home</button>
-        <button>
-        <Link
-        to="AboutPawafrique"
-        spy={true}
-        smooth={true}
-        hashSpy={true}
-        offset={50}
-        duration={500}
-        
-        >About us</Link>
-        </button>
-        <button>Services</button>
-        <button>Portfolio</button>
+      <button><Link
+         to="/"
+         spy={true}
+         smooth={true}
+         hashSpy={true}
+        //  offset={5}
+         duration={500}
+        >Home</Link></button>
+        <button><Link
+         to="About"
+         spy={true}
+         smooth={true}
+         hashSpy={true}
+        //  offset={5}
+         duration={500}
+        >About us</Link></button>
+        <button><Link
+         to="Service"
+         spy={true}
+         smooth={true}
+         hashSpy={true}
+        //  offset={5}
+         duration={500}
+        >Services</Link></button>
+       <button><Link
+         to="Portfolio"
+         spy={true}
+         smooth={true}
+         hashSpy={true}
+         offset={-100}
+         duration={500}
+        >Portfolio</Link></button>
       </motion.div>
       <motion.div className="w-1/3">
         <img alt="company logo" src={logo} />
@@ -69,7 +87,14 @@ const Nav = () => {
         animate={{ x: 0 }}
         className="hidden border-2 px-4 py-2 border-[#FF0000] lg:flex"
       >
-        Contact Us
+       <button><Link
+         to="Contact"
+         spy={true}
+         smooth={true}
+         hashSpy={true}
+        //  offset={5}
+         duration={500}
+        >Contact Us</Link></button> 
       </motion.button>
     </motion.nav>
   );

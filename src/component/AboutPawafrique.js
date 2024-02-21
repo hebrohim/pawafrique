@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { stagger } from "./Variants";
 const AboutPawafrique = () => {
   return (
-    <motion.div className="pt-5 px-5 md:px-16  hidden lg:block bg-[#e6e6e694]">
+    <motion.div id="About" className="pt-5 px-5 md:px-16  hidden lg:block bg-[#e6e6e694]">
       <motion.h4 
       variants={stagger(2,-50,0)}
     initial = "initial"

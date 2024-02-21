@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "./Variants";
 const ContactUs = () => {
   return (
-    <div className="my-10 px-5 md:px-16">
+    <div id="Contact" className="my-10 px-5 md:px-16">
       
       <motion.h2
         variants={fadeIn("right", 0.9, 1)}

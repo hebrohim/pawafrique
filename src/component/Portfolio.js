@@ -6,7 +6,7 @@ const Portfolio = (props) => {
   const newId = Number(id);
   
   return (
-    <motion.div
+    <motion.div id="Portfolio"
     initial={{ opacity: 0, translateX: newId % 2 === 0 ? 0 : -50 ,translateY: newId % 2 === 0 ? -50 : 0 }}
     whileInView={{ opacity: 1, translateX: 0 ,translateY:0}}
     viewport={{
